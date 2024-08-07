@@ -1,0 +1,72 @@
+ion-content {
+  --background: url('../../../assets/img/fonocc1.jpeg') no-repeat center center / cover;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding-right: 0px;
+   
+
+    padding-left: 0px;
+  }
+
+  .carousel {
+    flex: 1;
+    max-width: 100%; /* Ajusta el ancho máximo del carrusel */
+    margin-right: 0px;
+    margin-top: 20px;
+    
+  }
+
+  .carousel-inner {
+    height: 500px; /* Ajusta la altura del carrusel para hacerlo más alto y cuadrado */
+    position: relative; /* Asegúrate de que el contenedor del carrusel tenga una posición relativa */
+    overflow: hidden; /* Oculta el desbordamiento para evitar el recorte de las imágenes */
+    
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%; /* Ajusta la altura para que sea igual a la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el área del carrusel */
+  }
+
+  .login-container {
+    flex: 1;
+    max-width: 30%;
+    padding: 20px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+  }
+}
+
+ion-header::after {
+  background: url('../../../assets/img/fonocc1.jpeg') no-repeat center center / cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
+}
+
+ion-footer {
+  ion-toolbar {
+    --background: #62036e;
+    --color: #ffffff;
+  }
+
+  ion-segment-button {
+    --color-checked: #ffffff;
+    --background-checked: #326ce5;
+  }
+}
